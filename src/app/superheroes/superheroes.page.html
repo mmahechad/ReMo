@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>superheroes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <div *ngFor="let member of superheroes.members">
+        <span *ngIf="member.age > 30 ">
+          <h1 class='nombres'>{{member.name}}</h1>
+        <ul class='poderes' *ngFor="let power of member.powers"> 
+            <li id='lista'>{{power}}</li>
+        </ul>
+    </span>
+    </div>
+</ion-content>

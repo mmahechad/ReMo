@@ -9,11 +9,11 @@ const routes: Routes = [
   // { path: '', loadChildren: './loging/loging.module#LogingPageModule' },
   // { path: 'mauro', loadChildren: './mauro/mauro.module#MauroPageModule' },
   // { path: 'places', loadChildren: './places/places.module#PlacesPageModule' },
-  { path: 'superheroes', loadChildren: './superheroes/superheroes.module#SuperheroesPageModule' },  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
-  { path: 'modal-example', loadChildren: './modal-example/modal-example.module#ModalExamplePageModule' }
-
-
-
+  { path: 'superheroes', loadChildren: './superheroes/superheroes.module#SuperheroesPageModule' },
+  { path: 'modal', loadChildren: './modal/modal.module#ModalPageModule' },
+  { path: 'modal-example', loadChildren: './modal-example/modal-example.module#ModalExamplePageModule' },
+  { path: 'visitas', loadChildren: './visitas/visitas.module#VisitasPageModule' },
+  
 ];
 @NgModule({
   imports: [

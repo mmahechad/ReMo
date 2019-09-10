@@ -5,23 +5,14 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModalPage } from './modal.page';
-
-
-const routes: Routes = [
-  {
-    path: '',
-    component: ModalPage
-  }
-];
+import { ModaPage } from './moda.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
   ],
-  declarations: [ModalPage]
+  declarations: [ModaPage]
 })
-export class ModalPageModule {}
+export class ModaPageModule {}

@@ -13,9 +13,10 @@ export class ModalExamplePage implements OnInit {
 
   }
 
-  async presentModal() {
+  async presentModal(parameter) {
     const modal = await this.modalController.create({
-      component: ModalPage
+      component: ModalPage,
+      componentProps: {value: parameter}
     });
     return await modal.present();
   }
